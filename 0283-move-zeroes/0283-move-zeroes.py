@@ -3,6 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        for i in range(nums.count(0)):
+        cnt = nums.count(0)
+        for i in range(cnt):
             nums.pop(nums.index(0))
             nums.append(0)
