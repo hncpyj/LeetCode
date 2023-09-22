@@ -8,15 +8,12 @@ class MyQueue:
         self.stack1.append(x)
         return self.stack1
         
-        
-
     def pop(self) -> int:
         if self == []:
             return None
         else:
             return self.stack1.pop(0)
         
-
     def peek(self) -> int:
         if self == []:
             return None
@@ -24,16 +21,5 @@ class MyQueue:
             self.stack2 = self.stack1.copy()
             return self.stack2.pop(0)
         
-
     def empty(self) -> bool:
         return False if self.stack1 else True
-        
-        
-
-
-# Your MyQueue object will be instantiated and called as such:
-# obj = MyQueue()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.peek()
-# param_4 = obj.empty()
